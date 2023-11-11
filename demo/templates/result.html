@@ -17,5 +17,21 @@
     </style>
     <body>
         <h1>Flower you're trying to classify is <span class="h"> {{result}}</span></h1>
+        <div>
+            <script>
+                var resultValue = "{{result}}";  // Ensure {{result}} is properly assigned to resultValue
+
+                if (resultValue === "virginica") {
+                    document.write("<img src='https://daylily-phlox.eu/wp-content/uploads/2023/10/Iris-virginica-var.shrevei.jpg'/>");
+                } 
+                else if(resultValue === "versicolor"){
+                    document.write("<img src='https://m.espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/iris-versicolor-michel-sokolyk_0.jpg?itok=jfjbSw7b'/>");
+                }
+                else if(resultValue === "setosa"){
+                    document.write("<img src='https://daylily-phlox.eu/wp-content/uploads/2021/10/Iris-setosa-dwarf-form.jpg'/>");
+                }
+            </script>
+            
+        </div>
     </body>
 </html>
